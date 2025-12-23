@@ -65,7 +65,7 @@ export default function HomePage() {
                   className="border-2 border-gray-300 text-navy hover:bg-gray-50 rounded-full px-8 bg-transparent"
                 >
                   <Phone className="mr-2 w-5 h-5" />
-                  (201) 438-4393
+                  +1 (440) 490-7685
                 </Button>
               </div>
 

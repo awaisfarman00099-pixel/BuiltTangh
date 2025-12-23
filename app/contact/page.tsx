@@ -1,36 +1,40 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import { useEffect } from "react"
+import Script from "next/script"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Calendar } from "lucide-react"
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    projectType: "",
-    location: "",
-    timeline: "",
-    budget: "",
-    message: "",
-  })
+  useEffect(() => {
+    // Load Calendly CSS
+    const link = document.createElement("link")
+    link.href = "https://assets.calendly.com/assets/external/widget.css"
+    link.rel = "stylesheet"
+    document.head.appendChild(link)
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log(formData)
+    return () => {
+      // Cleanup link on unmount
+      const existingLink = document.querySelector('link[href="https://assets.calendly.com/assets/external/widget.css"]')
+      if (existingLink) {
+        document.head.removeChild(existingLink)
+      }
+    }
+  }, [])
+
+  const handleStartMeeting = () => {
+    window.open("https://calendly.com/famdispatchingllc/30min", "_blank")
   }
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        strategy="lazyOnload"
+      />
       <Navigation />
       <WhatsAppButton />
 
@@ -58,7 +62,7 @@ export default function ContactPage() {
                   <Phone className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">Phone</h3>
-                <p className="text-gray-700 mb-1">(201) 438-4393</p>
+                <p className="text-gray-700 mb-1">+1 (440) 490-7685</p>
                 <p className="text-sm text-gray-500">Mon-Fri 8am-6pm</p>
               </div>
 
@@ -91,112 +95,31 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Contact Form */}
+            {/* Calendly Section */}
             <div className="lg:col-span-2">
               <div className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 tracking-tight">Request a Free Quote</h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-900 mb-2">Name</label>
-                      <Input
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Your name"
-                        className="rounded-xl border-gray-300"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-900 mb-2">Email</label>
-                      <Input
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="your@email.com"
-                        className="rounded-xl border-gray-300"
-                        required
-                      />
-                    </div>
+                <div className="text-center mb-8">
+                  <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Calendar className="w-8 h-8 text-blue-600" />
                   </div>
-
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-900 mb-2">Phone</label>
-                      <Input
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="(201) 123-4567"
-                        className="rounded-xl border-gray-300"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-900 mb-2">Project Type</label>
-                      <Input
-                        value={formData.projectType}
-                        onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                        placeholder="e.g., Kitchen Remodel"
-                        className="rounded-xl border-gray-300"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-900 mb-2">Location</label>
-                      <Input
-                        value={formData.location}
-                        onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                        placeholder="City, NJ"
-                        className="rounded-xl border-gray-300"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-900 mb-2">Timeline</label>
-                      <Input
-                        value={formData.timeline}
-                        onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                        placeholder="When do you want to start?"
-                        className="rounded-xl border-gray-300"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">Budget Range</label>
-                    <Input
-                      value={formData.budget}
-                      onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                      placeholder="Approximate budget"
-                      className="rounded-xl border-gray-300"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">Project Details</label>
-                    <Textarea
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Tell us about your project..."
-                      rows={6}
-                      className="rounded-xl border-gray-300"
-                      required
-                    />
-                  </div>
-
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4 tracking-tight">Schedule a Meeting</h2>
+                  <p className="text-gray-600 text-lg mb-6">
+                    Book a free 30-minute consultation to discuss your project
+                  </p>
                   <Button
-                    type="submit"
+                    onClick={handleStartMeeting}
                     size="lg"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl py-6"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full px-8 py-6 shadow-lg hover-scale"
                   >
-                    Submit Request
+                    <Calendar className="mr-2 w-5 h-5" />
+                    Start Meeting
                   </Button>
-                </form>
+                </div>
+                <div
+                  className="calendly-inline-widget"
+                  data-url="https://calendly.com/famdispatchingllc/30min"
+                  style={{ minHeight: "700px", width: "100%" }}
+                />
               </div>
             </div>
           </div>

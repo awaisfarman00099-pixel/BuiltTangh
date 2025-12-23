@@ -9,7 +9,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <img
-              src="/images/your-20paragraph-20text-20-281-29.png"
+              src="/Your paragraph text (1).png"
               alt="Built Tough Construction"
               className="h-10 w-auto mb-4"
             />
@@ -91,7 +91,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="text-gray-900 font-medium text-sm">(201) 438-4393</div>
+                  <div className="text-gray-900 font-medium text-sm">+1 (440) 490-7685</div>
                   <div className="text-xs text-gray-500 mt-0.5">Mon-Fri 8am-6pm</div>
                 </div>
               </li>

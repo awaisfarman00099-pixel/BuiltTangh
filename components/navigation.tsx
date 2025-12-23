@@ -39,7 +39,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/images/your-20paragraph-20text-20-281-29.png"
+              src="/Your paragraph text (1).png"
               alt="Built Tough Construction"
               className="h-12 w-auto"
             />
@@ -60,7 +60,7 @@ export function Navigation() {
             ))}
             <Button className="bg-navy hover:bg-navy-light text-white rounded-full px-6 shadow-sm">
               <Phone className="w-4 h-4 mr-2" />
-              (201) 438-4393
+              +1 (440) 490-7685
             </Button>
           </div>
 
@@ -89,7 +89,7 @@ export function Navigation() {
             ))}
             <Button className="w-full bg-navy hover:bg-navy-light text-white rounded-full">
               <Phone className="w-4 h-4 mr-2" />
-              (201) 438-4393
+              +1 (440) 490-7685
             </Button>
           </div>
         </div>
