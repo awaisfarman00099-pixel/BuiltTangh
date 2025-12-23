@@ -37,12 +37,15 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center gap-3">
-            <img
-              src="/Your paragraph text (1).png"
-              alt="Built Tough Construction"
-              className="h-12 w-auto"
-            />
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-gray-500/10 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <img
+                src="/Your paragraph text (1).png"
+                alt="Built Tough Construction"
+                className="h-14 w-auto relative z-10 transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -58,7 +61,10 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Button className="bg-navy hover:bg-navy-light text-white rounded-full px-6 shadow-sm">
+            <Button
+              onClick={() => window.open("https://calendly.com/famdispatchingllc/30min", "_blank")}
+              className="bg-navy hover:bg-navy-light text-white rounded-full px-6 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+            >
               <Phone className="w-4 h-4 mr-2" />
               +1 (440) 490-7685
             </Button>
@@ -87,7 +93,10 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Button className="w-full bg-navy hover:bg-navy-light text-white rounded-full">
+            <Button
+              onClick={() => window.open("https://calendly.com/famdispatchingllc/30min", "_blank")}
+              className="w-full bg-navy hover:bg-navy-light text-white rounded-full cursor-pointer"
+            >
               <Phone className="w-4 h-4 mr-2" />
               +1 (440) 490-7685
             </Button>
