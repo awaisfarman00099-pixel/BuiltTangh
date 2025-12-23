@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/images/your-20paragraph-20text-20-281-29.png",
+        url: "/Your paragraph text (1).png",
       },
       {
         url: "/icon.svg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/images/your-20paragraph-20text-20-281-29.png",
+    apple: "/Your paragraph text (1).png",
   },
 }
 

@@ -16,11 +16,32 @@ export default function ContactPage() {
     link.rel = "stylesheet"
     document.head.appendChild(link)
 
+    // Add custom styles to hide scrollbar and ensure full visibility
+    const style = document.createElement("style")
+    style.textContent = `
+      .calendly-inline-widget {
+        overflow: hidden !important;
+      }
+      .calendly-inline-widget iframe {
+        height: 100% !important;
+        overflow: hidden !important;
+        border: none !important;
+      }
+      .calendly-badge-widget {
+        display: none !important;
+      }
+    `
+    document.head.appendChild(style)
+
     return () => {
-      // Cleanup link on unmount
+      // Cleanup link and style on unmount
       const existingLink = document.querySelector('link[href="https://assets.calendly.com/assets/external/widget.css"]')
       if (existingLink) {
         document.head.removeChild(existingLink)
+      }
+      const existingStyle = document.querySelector('style')
+      if (existingStyle && existingStyle.textContent?.includes('calendly-inline-widget')) {
+        document.head.removeChild(existingStyle)
       }
     }
   }, [])
@@ -143,11 +164,15 @@ export default function ContactPage() {
                       Start Meeting
                     </Button>
                   </div>
-                  <div className="mt-8 border-t border-gray-200 pt-8">
+                  <div className="mt-8 border-t border-gray-200 pt-8 overflow-hidden">
                     <div
                       className="calendly-inline-widget rounded-2xl overflow-hidden"
                       data-url="https://calendly.com/famdispatchingllc/30min"
-                      style={{ minHeight: "700px", width: "100%" }}
+                      style={{ 
+                        height: "900px", 
+                        width: "100%",
+                        overflow: "hidden"
+                      }}
                     />
                   </div>
                 </div>
