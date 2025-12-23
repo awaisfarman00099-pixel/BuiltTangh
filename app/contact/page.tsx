@@ -124,30 +124,32 @@ export default function ContactPage() {
               <div className="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-100/50 to-transparent rounded-full blur-3xl -mr-32 -mt-32" />
                 <div className="relative z-10">
-                  <div className="text-center mb-8">
+                  <div className="text-center mb-10">
                     <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl transform hover:scale-110 transition-transform duration-300">
                       <Calendar className="w-10 h-10 text-white" />
                     </div>
                     <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-4 tracking-tight">
                       Schedule a Meeting
                     </h2>
-                    <p className="text-gray-600 text-lg mb-6 max-w-md mx-auto">
+                    <p className="text-gray-600 text-lg mb-8 max-w-md mx-auto">
                       Book a free 30-minute consultation to discuss your project
                     </p>
                     <Button
                       onClick={handleStartMeeting}
                       size="lg"
-                      className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-full px-8 py-6 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                      className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-full px-8 py-6 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 mb-10"
                     >
                       <Calendar className="mr-2 w-5 h-5" />
                       Start Meeting
                     </Button>
                   </div>
-                  <div
-                    className="calendly-inline-widget rounded-2xl overflow-hidden"
-                    data-url="https://calendly.com/famdispatchingllc/30min"
-                    style={{ minHeight: "700px", width: "100%" }}
-                  />
+                  <div className="mt-8 border-t border-gray-200 pt-8">
+                    <div
+                      className="calendly-inline-widget rounded-2xl overflow-hidden"
+                      data-url="https://calendly.com/famdispatchingllc/30min"
+                      style={{ minHeight: "700px", width: "100%" }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
