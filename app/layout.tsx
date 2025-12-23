@@ -19,25 +19,9 @@ export const metadata: Metadata = {
         url: "/Your paragraph text (1).png",
         type: "image/png",
       },
-      {
-        url: "/Your paragraph text (1).png",
-        sizes: "32x32",
-        type: "image/png",
-      },
-      {
-        url: "/Your paragraph text (1).png",
-        sizes: "16x16",
-        type: "image/png",
-      },
     ],
     shortcut: "/Your paragraph text (1).png",
-    apple: [
-      {
-        url: "/Your paragraph text (1).png",
-        sizes: "180x180",
-        type: "image/png",
-      },
-    ],
+    apple: "/Your paragraph text (1).png",
   },
 }
 
