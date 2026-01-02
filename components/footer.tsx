@@ -116,7 +116,7 @@ export function Footer() {
 
         <div className="border-t border-gray-200 pt-8 text-center">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Built Tough Construction. All rights reserved.04f9ad64ed24a48f.vercel-dns-017.com.
+            &copy; {new Date().getFullYear()} Built Tough Construction. All rights reserved.
           </p>
         </div>
       </div>
