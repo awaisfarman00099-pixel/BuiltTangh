@@ -206,7 +206,7 @@ export default function HomePage() {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">Ready to Start Your Project?</h2>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-            Get a free consultation and quote from New Jersey's most trusted construction company
+            Get a free consultation and quote fromTexas's most trusted construction company
           </p>
           <Link href="/contact">
             <Button

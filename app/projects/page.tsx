@@ -57,7 +57,7 @@ export default function ProjectsPage() {
             Project Portfolio
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Browse through our collection of successful construction projects across New Jersey
+            Browse through our collection of successful construction projects acrossTexas
           </p>
         </div>
       </section>

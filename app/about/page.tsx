@@ -33,7 +33,7 @@ export default function AboutPage() {
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">Our Story</h2>
               <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 1994, Built Tough Construction has been serving New Jersey with integrity, quality, and
+                  Founded in 1994, Built Tough Construction has been servingTexas with integrity, quality, and
                   dedication for over three decades.
                 </p>
                 <p>
@@ -118,7 +118,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "31+ years of proven experience in New Jersey",
+              "31+ years of proven experience inTexas",
               "Fully licensed and insured for your protection",
               "Transparent pricing with no hidden fees",
               "Response time under 24 hours guaranteed",

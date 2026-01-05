@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Built Tough Construction | 31+ Years of Excellence in NJ",
   description:
-    "Trusted construction company in New Jersey since 1994. Specializing in residential and commercial projects, kitchen remodels, bathroom renovations, and more. Licensed & Insured.",
+    "Trusted construction company inTexas since 1994. Specializing in residential and commercial projects, kitchen remodels, bathroom renovations, and more. Licensed & Insured.",
   keywords:
-    "construction NJ, home renovation, kitchen remodel, bathroom renovation, commercial construction, New Jersey builder",
+    "construction NJ, home renovation, kitchen remodel, bathroom renovation, commercial construction,Texas builder",
   generator: "v0.app",
   icons: {
     icon: [

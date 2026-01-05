@@ -14,7 +14,7 @@ export function Footer() {
               className="h-10 w-auto mb-4"
             />
             <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-              Building excellence in New Jersey since 1994. Your trusted partner for residential and commercial
+              Building excellence inTexas since 1994. Your trusted partner for residential and commercial
               construction.
             </p>
             <div className="flex gap-3">
