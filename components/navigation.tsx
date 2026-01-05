@@ -66,7 +66,7 @@ export function Navigation() {
               className="bg-navy hover:bg-navy-light text-white rounded-full px-6 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
             >
               <Phone className="w-4 h-4 mr-2" />
-              +1 (440) 490-7685
+              +1 (832) 2827247
             </Button>
           </div>
 
@@ -98,7 +98,7 @@ export function Navigation() {
               className="w-full bg-navy hover:bg-navy-light text-white rounded-full cursor-pointer"
             >
               <Phone className="w-4 h-4 mr-2" />
-              +1 (440) 490-7685
+              +1 (832) 2827247
             </Button>
           </div>
         </div>

@@ -91,7 +91,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="text-gray-900 font-medium text-sm">+1 (440) 490-7685</div>
+                  <div className="text-gray-900 font-medium text-sm">+1 (832) 2827247</div>
                   <div className="text-xs text-gray-500 mt-0.5">Mon-Fri 8am-6pm</div>
                 </div>
               </li>
@@ -108,7 +108,8 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
-                <div className="text-gray-900 font-medium text-sm">Serving all of New Jersey</div>
+                <div className="text-gray-900 font-medium text-sm">3902 NASA Pkwy 
+                Houston Texas 77586</div>
               </li>
             </ul>
           </div>

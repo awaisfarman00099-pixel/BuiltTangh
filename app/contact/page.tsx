@@ -91,7 +91,7 @@ export default function ContactPage() {
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">Phone</h3>
-                <p className="text-gray-700 mb-1 font-medium">+1 (440) 490-7685</p>
+                <p className="text-gray-700 mb-1 font-medium">+1 (832) 2827247</p>
                 <p className="text-sm text-gray-500">Mon-Fri 8am-6pm</p>
               </div>
 
@@ -109,8 +109,8 @@ export default function ContactPage() {
                   <MapPin className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">Service Area</h3>
-                <p className="text-gray-700 mb-1 font-medium">All of New Jersey</p>
-                <p className="text-sm text-gray-500">Licensed & Insured</p>
+                <p className="text-gray-700 mb-1 font-medium">3902 NASA Pkwy 
+                Houston Texas 77586</p>
               </div>
 
               <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:border-blue-300 transition-all duration-300 transform hover:-translate-y-1">
@@ -128,7 +128,7 @@ export default function ContactPage() {
                   <MessageCircle className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-white mb-2 text-lg">WhatsApp</h3>
-                <p className="text-white/90 mb-1 font-medium">+1 (440) 490-7685</p>
+                <p className="text-white/90 mb-1 font-medium">+1 (832) 2827247</p>
                 <p className="text-sm text-white/80 mb-4">Chat with us instantly</p>
                 <Button
                   onClick={handleWhatsApp}
