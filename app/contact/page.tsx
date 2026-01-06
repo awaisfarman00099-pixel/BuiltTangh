@@ -100,7 +100,7 @@ export default function ContactPage() {
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">Email</h3>
-                <p className="text-gray-700 mb-1 font-medium">info@builttough.com</p>
+                <p className="text-gray-700 mb-1 font-medium">info@builttough.site</p>
                 <p className="text-sm text-gray-500">We reply within 24 hours</p>
               </div>
 

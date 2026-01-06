@@ -7,11 +7,11 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Built Tough Construction | 31+ Years of Excellence in NJ",
+  title: "Built Tough Construction | 31+ Years of Excellence in Texas",
   description:
     "Trusted construction company inTexas since 1994. Specializing in residential and commercial projects, kitchen remodels, bathroom renovations, and more. Licensed & Insured.",
   keywords:
-    "construction NJ, home renovation, kitchen remodel, bathroom renovation, commercial construction,Texas builder",
+    "construction Texas, home renovation, kitchen remodel, bathroom renovation, commercial construction,Texas builder",
   generator: "v0.app",
   icons: {
     icon: [

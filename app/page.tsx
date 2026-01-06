@@ -39,7 +39,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8 animate-fade-in-up">
               <Badge className="bg-navy/10 text-navy border-navy/20 px-4 py-1.5 text-sm font-medium">
-                Trusted for 31+ Years in NJ
+                Trusted for 31+ Years in Texas
               </Badge>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-navy leading-tight">
                 Building with Excellence

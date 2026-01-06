@@ -99,10 +99,10 @@ export function Footer() {
                 <Mail className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
                   <a
-                    href="mailto:info@builttough.com"
+                    href="mailto:info@builttough.site"
                     className="text-gray-900 hover:text-blue-600 transition-colors font-medium text-sm"
                   >
-                    info@builttough.com
+                    info@builttough.site
                   </a>
                 </div>
               </li>
